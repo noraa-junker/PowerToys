@@ -5,6 +5,9 @@
     <AssemblyName>PowerToys.AdvancedPaste.Engine</AssemblyName>
     <RootNamespace>AdvancedPaste</RootNamespace>
     <Platforms>x64;ARM64</Platforms>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'x64'">win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'ARM64'">win-arm64</RuntimeIdentifier>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
